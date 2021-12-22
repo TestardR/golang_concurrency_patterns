@@ -26,6 +26,7 @@ func main() {
 		}()
 		return terminated
 	}
+
 	done := make(chan interface{})
 	terminated := doWork(done, nil)
 	go func() {
